@@ -1,17 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  /* background-color: #828282; */
-  /* background-image: url('ellazakyselamanya.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; */
-  /* why is this need to be different body? saran gpt sih */
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  /* filter: brightness(70%); */
+  /* tbh gatau gunanya yg di line 09 apa */
+  min-height: 100vh;
+  position: relative; 
 }
 
 body::before {
@@ -25,10 +21,9 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* ini juga di bawah blum tau apa  */
   z-index: -1; 
-/* tbh i dont really understand this */
-  opacity: 0.5; 
-  filter: brightness(50%);
+  filter: brightness(50%); 
 }
 
 .container {
@@ -39,25 +34,20 @@ body::before {
   margin: 0 auto;
   background: #fff;
   padding: 20px;
-  justify-content: center;
-  align-content: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  position: relative;
-  /* msi blum menger position */
 }
 
-h2  {
+h2 {
   font-size: medium;
-  font-weight:700;
+  font-weight: 700;
 }
 
 #isi {
-  padding: 0px 15px;
+  padding: 0 15px;
 }
 
 #title {
-  position: relative ;
   text-align: center;
 }
 
@@ -70,7 +60,6 @@ h2  {
 
 button {
   background-color: #4CAF50; 
-  /* width: fit-content; */
   border: none;            
   color: white;             
   padding: 15px 32px;        
@@ -79,7 +68,7 @@ button {
   display: inline-block;    
   flex: 1;  
   font-size: 16px;           
-  margin: 5px 0px;       
+  margin: 5px 0;       
   cursor: pointer; 
   border-radius: 10px;
 }
@@ -94,6 +83,6 @@ button {
   }
 
   button {
-    margin: 0px 5px; 
+    margin: 0 5px; 
   }
 }
