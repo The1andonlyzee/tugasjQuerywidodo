@@ -32,7 +32,8 @@ body::before {
 }
 
 .container {
-  width: 600px;
+  width: 90%; 
+  max-width: 600px; 
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -62,6 +63,7 @@ h2  {
 
 .wrapbutton {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -77,11 +79,21 @@ button {
   display: inline-block;    
   flex: 1;  
   font-size: 16px;           
-  margin: 0px 5px;       
+  margin: 5px 0px;       
   cursor: pointer; 
   border-radius: 10px;
 }
 
 #button:hover {
   background-color: #419544;
+}
+
+@media (min-width: 600px) {
+  .wrapbutton {
+    flex-direction: row; 
+  }
+
+  button {
+    margin: 0px 5px; 
+  }
 }
